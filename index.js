@@ -1,9 +1,15 @@
-Function writecards(["Ada", "Brendan", "Ali"], "birthday")
-{
-
-  for(let i=0;i<arr.length;i++){
-     
-     let  msg[i]=(`Thank you, ${arr[i]}, for the wonderful ${event} gift!`);
+function writeCards( namesArray, event ) {
+  let thankYouCards = []
+  for ( let i = 0; i < namesArray.length; i++ ) {
+    thankYouCards.push( `Thank you, ${namesArray[i]}, for the wonderful ${event} gift!` )
+  }
+  return thankYouCards
 }
-return msg;
+
+function countdown( countdown ) {
+  while ( countdown > 0 ) {
+    console.log( countdown );
+    countdown -= 1;
+  }
+  console.log( countdown );
 }
