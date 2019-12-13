@@ -1,13 +1,17 @@
 // Code your solutions in this file
 
-function writeCards(arr [3] , str){
-  
-  for(let i=0;i<arr.length;i++)
-  return console.log(`Thanks ${arr[i]}`);
+function writeCards( namesArray, event ) {
+  let thankYouCards = []
+  for ( let i = 0; i < namesArray.length; i++ ) {
+    thankYouCards.push( `Thank you, ${namesArray[i]}, for the wonderful ${event} gift!` )
+  }
+  return thankYouCards
 }
 
-writeCards(["Ada", "Brendan", "Ali"], "birthday");
-
-for (let countdown = 10; countdown < 0; countdown--) {
-  console.log(countdown);
+function countdown( countdown ) {
+  while ( countdown > 0 ) {
+    console.log( countdown );
+    countdown -= 1;
+  }
+  console.log( countdown );
 }
